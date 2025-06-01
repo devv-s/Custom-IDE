@@ -1,6 +1,6 @@
 return {
     "seblyng/roslyn.nvim",
-    -- ft = "cs",
+    ft = "cs",
     ---@module 'roslyn.config'
     ---@type RoslynNvimConfig
     opts = {
