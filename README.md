@@ -11,7 +11,7 @@ Status meaning:
 
 | Feature                              | Status     | SHORTCUT   | COMMENT                        | 
 |:-------------------------------------|:----------:|:----------:|:-------------------------------|
-|File Explorer (tree view)             |Configured  |<SPC>e      |                                |
+|File Explorer (tree view)             |Configured  |\<SPC\>ee   |                                |
 |File Explorer (secondary)             |Installed   |-           |Has errors while opening. Mostly used for manual quick or bulk file operations which native tooling doesn't do. |
 |Fuzzy Finder                          |Configured  |            |                                |
 |Fuzzy Finder: Find files (current dir)|Configured  |<SPC>ff     |                                |
