@@ -14,12 +14,12 @@ Status meaning:
 |File Explorer (tree view)             |Configured  |\<SPC\>ee   |                                |
 |File Explorer (secondary)             |Installed   |-           |Has errors while opening. Mostly used for manual quick or bulk file operations which native tooling doesn't do. |
 |Fuzzy Finder                          |Configured  |            |                                |
-|Fuzzy Finder: Find files (current dir)|Configured  |<SPC>ff     |                                |
-|Fuzzy Finder: Find files (neovim)     |Configured  |<SPC>fc     |Required ripgrep (linux).       |
-|Fuzzy Finder: Find text               |Configured  |<SPC>ft     |                                |
-|Fuzzy Finder: Find selected text      |Configured  |<SPC>fT     |                                |
-|Fuzzy Finder: Find buffers            |Configured  |<SPC>fb     |                                |
-|Fuzzy Finder: Find help tags          |Configured  |<SPC>fh     |                                |
+|Fuzzy Finder: Find files (current dir)|Configured  |<\SPC\>ff     |                                |
+|Fuzzy Finder: Find files (neovim)     |Configured  |<\SPC\>fc     |Required ripgrep (linux).       |
+|Fuzzy Finder: Find text               |Configured  |<\SPC\>ft     |                                |
+|Fuzzy Finder: Find selected text      |Configured  |<\SPC\>fT     |                                |
+|Fuzzy Finder: Find buffers            |Configured  |<\SPC\>fb     |                                |
+|Fuzzy Finder: Find help tags          |Configured  |<\SPC\>fh     |                                |
 |Intellisense                          |Unverified  |            |Appropriate lang server must be installed and accessible by neovim. |
 |Intellisense: Autocomplete            |Unverified  |            |                                |
 |Intellisense: Autosuggest             |Unverified  |            |                                |
