@@ -23,7 +23,8 @@ vim.opt.rtp:prepend(lazypath)
 require("lazy").setup({
   spec = {
     -- import your plugins
-		{ import = "components" }
+		{ import = "components.editor-components" },
+		{ import = "components.intellisense-components" },
 		-- { 'sontungexpt/better-diagnostic-virtual-text', lazy = true }
   },
   -- Configure any other settings here. See the documentation for more details.
