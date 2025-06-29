@@ -13,27 +13,32 @@ Status meaning:
 | Feature                                        | Status     | SHORTCUT   | COMMENT                        | 
 |:-----------------------------------------------|:----------:|:----------:|:-------------------------------|
 |**File Explorer**                               |            |            |                                |
-|Can see project structure (tree view)           |Verified    |\<LDR\>ee   |Same key for opening/closing.   |
-|Can see Neovim dir structure (tree view)        |Requirement |\<LDR\>ec   |Opens up nvim dir for file creation.|
-|Can edit folder structure like text             |Failure     |-           |Has errors while opening.       |
+|Can see project structure (tree view)           |Verified    |-e          |Same key for opening/closing.   |
+|Can see Neovim dir structure (tree view)        |Requirement |-c          |Opens up nvim dir for file mgmt.|
 |**Find & Replace**                              |Configured  |            |Telescope & FzfLua (active)     |
 |Can find files (in current dir)                 |Verified    |\<LDR\>ff   |                                |
 |Can find files (in neovim dir)                  |Verified    |\<LDR\>fc   |Required ripgrep/fzf (linux).   |
 |Find text (in current dir)                      |Native      |\/\<text\>  |                                |
 |Find and replace text (in current dir)          |Native      |%s\/\<old\>\/\<new\>\/g|                     |
-|Find and replace text (in project dir)          |Requirement |            |                                |
+|Find and replace text (in project dir)          |Verified    |\<LDR\>st   |Search text across projects.    |
+|Find and replace highlighted text               |Unverified  |\<LDR\>sT   |Search highlighted text across projects. |
 |**Intellisense**                                |Unverified  |            |Appropriate lang server must be installed and accessible by neovim. |
-|Shows autocomplete dialog                       |Unverified  |            |                                |
+|Shows autocomplete dialog                       |Verified    |            |                                |
 |Can go to definition                            |Verified    |gd          |                                |
-|Can peek the definition/signature               |Requirement |gD          |                                |
-|Can refactor/rename objects                     |Unverified  |grn         |                                |
-|Can find references of an object                |Unverified  |grr         |                                |
+|Can peek the definition/signature               |Verified    |gD          |                                |
+|Can refactor/rename objects                     |Verified    |grn         |                                |
+|Can find references of an object                |Verified    |grr         |                                |
+|Can close the pairing symbols (e.g. brackets)   |Verified    |Automatic   |                                |
+|Can comment and uncomment line(s).              |Verified    |gcc         |Can also un/comment blocks (gb).|
 |**System Ops**                                  |Unverified  |            |                                |
 |Copy to/Paste from system clipboard             |Verified    |"+y / "+p   |Use vim registers to copy/paste.|
+|Open/close terminal window**(s)**               |Requirement |            |Useful when not in tmux session.|
 
 
 | Tools Required              | Used By           | COMMENT                        | 
 |:----------------------------|:-----------------:|:-------------------------------|
+|Ast-grep                     |Grug-Far           |Windows alterative unknown      |
 |Fzf                          |Fzf-lua            |Windows alterative unknown      |
-|Ripgrep                      |Telescope          |Windows alterative unknown      |
+|Ripgrep                      |Telescope/Grug-Far |Windows alterative unknown      |
 |Wl-clipboard                 |Neovim Registers   |Windows alterative unknown      |
+|Yazi                         |Yazi.nvim          |Can be built from scratch.      |

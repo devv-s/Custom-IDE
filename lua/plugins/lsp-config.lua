@@ -14,7 +14,7 @@ return {
 		}
 	},
 	config = function()
-		require("lspconfig").lua_ls.setup {}
-		require("lspconfig").csharp_ls.setup {}
+		vim.lsp.enable("lua_ls")
+		vim.lsp.enable("csharp-ls")
 	end
 }
