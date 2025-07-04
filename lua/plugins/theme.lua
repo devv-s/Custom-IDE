@@ -15,6 +15,12 @@ function setTheme(appliedTheme)
 				vim.cmd.colorscheme(appliedTheme)
 			end
 		}
+
+		-- set a variant for each theme.
+		if appliedTheme == "material" then
+			vim.g.material_style = "deep ocean"
+		end
+
 		return setup
 	else
 		vim.notify("Cannot find your desired theme, did you make a typo?", vim.log.levels.ERROR)
