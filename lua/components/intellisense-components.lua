@@ -6,5 +6,6 @@ return {
 	require("plugins.mason"),
 	require("plugins.autopairs"),
 	require("plugins.treesitter"),
+	require("plugins.roslyn"),
 	require("plugins.surround"),
 }

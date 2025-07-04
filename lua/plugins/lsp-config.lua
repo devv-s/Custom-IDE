@@ -15,6 +15,6 @@ return {
 	},
 	config = function()
 		vim.lsp.enable("lua_ls")
-		vim.lsp.enable("csharp-ls")
+		vim.lsp.enable("roslyn")
 	end
 }
