@@ -1,0 +1,15 @@
+#!/bin/bash
+PROJ=$1
+if tmux has-session -t "$PROJ" 2>/dev/null; then
+	echo "Session exists, attaching..."
+else
+	echo "Creating new session..."
+	WINDOW1="Editor"
+	WINDOW2="Bash"
+	WINDOW3="Server"
+	tmux new-session -d -s "$PROJ" -n "$WINDOW1"
+	tmux new-window -t "$PROJ" -n "$WINDOW2"
+	tmux new-window -t "$PROJ" -n "$WINDOW3"
+	tmux send-keys -t "$PROJ:$WINDOW1" "nvim ." C-m
+	tmux attach-session -t "$PROJ"
+fi
