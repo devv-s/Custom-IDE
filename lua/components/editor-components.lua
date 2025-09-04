@@ -5,4 +5,6 @@ return {
 	require("plugins.statusline"),
 	require("plugins.theme"),
 	require("plugins.yazi"),
+	require("plugins.oil"),
+	require("plugins.neotree"),
 }
