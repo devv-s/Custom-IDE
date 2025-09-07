@@ -14,3 +14,4 @@ option.scrolloff       = 10
 
 -- Appearance Related
 option.showmode        = false
+option.laststatus      = 3 -- global status line.
